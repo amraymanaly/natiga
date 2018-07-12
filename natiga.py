@@ -73,7 +73,7 @@ def parse_args():
     parser.add_argument('--seats', nargs='+', type=int, help='Student seat numbers')
     parser.add_argument('--schools', nargs='+', help='Link to a school')
     parser.add_argument('-o', '--outfile', required=True, help='Output filename')
-    parser.add_argument('-f', default=['html'], nargs='+', choices=['html', 'excel', 'sqlite'],
+    parser.add_argument('-f', default=['excel'], nargs='+', choices=['html', 'excel', 'sqlite'],
         help='Output file format. You can specify multiple, e.g: -f html excel ..', dest='fileformats')
     options = parser.parse_args()
     # Options stuff
