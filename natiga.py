@@ -147,6 +147,7 @@ if __name__ == '__main__':
                 conn.commit()
                 c.close()
                 conn.close()
+            print('Written to %s!' % file)
     except KeyboardInterrupt:
         print('\nInterrupted. Exiting ..', file=sys.stderr)
         sys.exit(1)
