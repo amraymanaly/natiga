@@ -60,7 +60,7 @@ class Student:
             data = res[2].findAll('td')
             self.ranks = {
                 'الترتيب على الجمهورية': data[2].text.strip(),
-                'الترتيب على الشعبط': data[5].text.strip(),
+                'الترتيب على الشعبة': data[5].text.strip(),
                 'الترتيب على المحافظة': data[8].text.strip()
             }
             students.append(self)
